@@ -1,0 +1,27 @@
+Primatelj: [upisati mail Društva]
+Predmet: prijedlog nove stranice za Društvo
+Privitak: ponuda.html (1 stranica)
+
+Poštovani,
+
+pratim vaš rad preko objava Krapinsko-zagorske županije. Projekt mentalnog
+zdravlja djece i mladih, predavanje za pomagače u knjižnici Zabok i Tjedan
+psihologije svake veljače. Taj rad se slabo vidi na vašoj stranici.
+
+Složio sam novi prijedlog: četiri stranice na hrvatskom, s članstvom,
+programima i obrascem za pristupnice. Pogledajte demo ovdje:
+https://website-sigma-six-15.vercel.app
+
+Poklanjam ga Društvu. Redizajn je pro-bono, nula eura. U privitku šaljem
+ponudu od jedne stranice. Ništa se ne objavljuje bez vašeg pisanog "može".
+
+Trebam tri podatka za završetak: točan kontakt mail i telefon za stranicu,
+tekuću visinu članarine i pristupnicu ako je imate.
+
+Mogu doći uživo na petnaest minuta i pokazati demo. Odgovara li vam idući
+tjedan?
+
+Srdačan pozdrav,
+David
+Syntax Digital, Donji Miholjac
+Demo: https://website-sigma-six-15.vercel.app
