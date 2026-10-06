@@ -36,6 +36,9 @@ section{padding:clamp(2.5rem,6vw,4rem) 0}
 .fact .l{font-size:.85rem;color:#DCE7E2}
 .fact.cream{background:var(--accent-bg);color:var(--text)}
 .fact.cream .l{color:var(--text-soft)}
+.photo{width:100%;height:220px;object-fit:cover;border-radius:14px;border:1px solid var(--line);display:block;margin-bottom:.9rem}
+@media (max-width:900px){.proj{grid-template-columns:1fr}.photo{height:200px}}
+@media (max-width:600px){.nav-links{display:none}.hamburger{display:block}.menu-open .nav-links{display:flex;flex-direction:column;position:absolute;left:0;right:0;top:100%;background:var(--surface);border-bottom:1px solid var(--line);padding:.6rem 1rem 1rem;align-items:flex-start}.photo{height:auto}}
 .btn{display:inline-flex;align-items:center;gap:.5rem;padding:.85rem 1.3rem;border-radius:14px;border:1px solid var(--primary);background:var(--primary);color:#fff;font-weight:600;text-decoration:none}
 .btn:hover{background:var(--primary-d)}
 a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
@@ -43,8 +46,6 @@ footer{border-top:1px solid var(--line);padding:1.6rem 0;color:var(--text-soft);
 footer a{color:var(--text);text-decoration:none}
 .reveal{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s ease}
 .reveal.visible{opacity:1;transform:none}
-@media (max-width:900px){.proj{grid-template-columns:1fr}}
-@media (max-width:600px){.nav-links{display:none}.hamburger{display:block}.menu-open .nav-links{display:flex;flex-direction:column;position:absolute;left:0;right:0;top:100%;background:var(--surface);border-bottom:1px solid var(--line);padding:.6rem 1rem 1rem;align-items:flex-start}}
 @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
 </style></head><body>
 <nav class="site-nav" aria-label="Glavna navigacija"><div class="container">
@@ -59,6 +60,7 @@ footer a{color:var(--text);text-decoration:none}
 <main><section><div class="container"><div class="stack">
 <div class="proj reveal"><div>
 <h2>Projekt mentalnog zdravlja djece i mladih</h2>
+<img class="photo" src="https://kzz.hr/wp-content/uploads/2026/09/KZZ_6990-Copy-600x400.jpg" alt="Projekt mentalnog zdravlja djece i mladih, predavanje u Zaboku" loading="lazy" width="600" height="400">
 <p>Višegodišnji projekt Društva uz potporu Krapinsko-zagorske županije. Društvo istražuje potrebe roditelja djece s razvojnim rizicima i teškoćama, potrebe stručnjaka i potrebe udruga u županiji.</p>
 <ul>
 <li>Edukacija nastavnika, roditelja i učenika</li>
@@ -69,6 +71,7 @@ footer a{color:var(--text);text-decoration:none}
 <div class="fact"><div class="n">1.730 €</div><div class="l">potpora KZŽ za 2025., prema popisu dodijeljenih sredstava na kzz.hr</div></div></div>
 <div class="proj reveal"><div>
 <h2>Briga o pomagačima</h2>
+<img class="photo" src="https://kzz.hr/wp-content/uploads/2026/09/KZZ_6891-Copy-600x400.jpg" alt="Predavanje Mentalno zdravlje pomagača u Gradskoj knjižnici Zabok" loading="lazy" width="600" height="400">
 <p>Predavanje „Mentalno zdravlje pomagača, od brige za sebe do brige za druge" održano je u Gradskoj knjižnici Zabok. Vodila ga je Mirna Jakšić, psihologinja i psihoterapeutkinja, prema objavi KZŽ.</p>
 <ul>
 <li>Publika: pomagačka zanimanja koja rade s djecom i obiteljima</li>

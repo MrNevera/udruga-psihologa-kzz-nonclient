@@ -39,6 +39,12 @@ section{padding:clamp(2.5rem,6vw,4.5rem) 0}
 .hero-panel h3{margin:.7rem 0 .3rem}
 .hero-panel p{color:var(--text-soft);font-size:.95rem}
 .hero-panel .meta{margin-top:.8rem;font-size:.85rem;color:var(--text-soft);border-top:1px solid var(--line);padding-top:.8rem}
+.photo{width:100%;height:auto;border-radius:16px;border:1px solid var(--line);display:block;margin:.8rem 0 .4rem}
+.photo-cap{font-size:.8rem;color:var(--text-soft);margin:0 0 .4rem}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(.8rem,2vw,1.2rem);margin-top:1.4rem}
+.gallery figure{margin:0}
+.gallery img{width:100%;height:200px;object-fit:cover;border-radius:16px;border:1px solid var(--line);display:block}
+.gallery figcaption{font-size:.8rem;color:var(--text-soft);margin-top:.4rem}
 .feature-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(1rem,3vw,1.5rem);margin-top:1.4rem}
 .feature-main{background:var(--primary);color:#fff;border-radius:20px;padding:clamp(1.3rem,3vw,2rem);grid-row:span 2}
 .feature-main h3{color:#fff}
@@ -63,8 +69,8 @@ footer a:hover{color:var(--accent)}
 .reveal.visible{opacity:1;transform:none}
 a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
 ::-webkit-scrollbar{width:10px}::-webkit-scrollbar-track{background:var(--bg)}::-webkit-scrollbar-thumb{background:var(--primary);border-radius:8px}
-@media (max-width:900px){.hero .container{grid-template-columns:1fr}.feature-grid{grid-template-columns:1fr}.feature-main{grid-row:auto}.split{grid-template-columns:1fr}}
-@media (max-width:600px){.nav-links{display:none}.hamburger{display:block}.menu-open .nav-links{display:flex;flex-direction:column;position:absolute;left:0;right:0;top:100%;background:var(--surface);border-bottom:1px solid var(--line);padding:.6rem 1rem 1rem;align-items:flex-start}.btn-row .btn{width:100%;justify-content:center}}
+@media (max-width:900px){.hero .container{grid-template-columns:1fr}.feature-grid{grid-template-columns:1fr}.feature-main{grid-row:auto}.split{grid-template-columns:1fr}.gallery{grid-template-columns:1fr 1fr}.gallery img{height:180px}}
+@media (max-width:600px){.nav-links{display:none}.hamburger{display:block}.menu-open .nav-links{display:flex;flex-direction:column;position:absolute;left:0;right:0;top:100%;background:var(--surface);border-bottom:1px solid var(--line);padding:.6rem 1rem 1rem;align-items:flex-start}.btn-row .btn{width:100%;justify-content:center}.gallery{grid-template-columns:1fr}.gallery img{height:auto}}
 @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}.hero-panel{animation:none}}
 </style></head><body>
 <nav class="site-nav" aria-label="Glavna navigacija"><div class="container">
@@ -76,7 +82,10 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 <div><h1>Psihologija koja stanuje u Zagorju.</h1>
 <p class="lead">Društvo psihologa Krapinsko-zagorske županije okuplja psihologe iz Zaboka i cijele županije. Vodite predavanja, istraživanja i Tjedan psihologije. Ova stranica to pokazuje jasno.</p>
 <div class="btn-row"><a class="btn" href="o-nama.html#clanstvo">Učlani se →</a><a class="btn btn-secondary" href="usluge.html">Pogledaj aktivnosti</a></div></div>
-<div class="hero-panel"><span class="tag">Aktualno</span><h3>Projekt mentalnog zdravlja djece i mladih</h3>
+<div class="hero-panel"><span class="tag">Aktualno</span>
+<img class="photo" src="https://kzz.hr/wp-content/uploads/2026/09/KZZ_6979-Copy-600x400.jpg" alt="Predavanje Mentalno zdravlje pomagača u Gradskoj knjižnici Zabok" loading="lazy" width="600" height="400">
+<p class="photo-cap">Foto: predavanje u Gradskoj knjižnici Zabok, 29. rujna — izvor kzz.hr</p>
+<h3>Projekt mentalnog zdravlja djece i mladih</h3>
 <p>Višegodišnji projekt Društva uz potporu Krapinsko-zagorske županije. Predavanja za pomagače, istraživanja potreba roditelja, suradnja sa školama.</p>
 <div class="meta">Potpora KZŽ za 2025.: 1.730,00 — prema popisu dodijeljenih sredstava na kzz.hr</div></div>
 </div></header>
@@ -104,7 +113,15 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 <div class="fee"><span class="amount">10 €</span><span style="color:var(--text-soft);font-size:.9rem">godišnja članarina za 2023., prema stranici Društva</span></div>
 <p>Vježbenici, nezaposleni psiholozi i umirovljenici ne plaćaju članarinu. Odluku o prijemu donosi Skupština.</p>
 <p style="margin-top:.8rem"><a href="o-nama.html#clanstvo" style="color:var(--primary);font-weight:600;text-decoration:none">Uvjeti učlanjenja →</a></p></div>
-</div></section>
+</div></div></section>
+<section style="background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line)"><div class="container">
+<h2 class="reveal">S predavanja u Zaboku</h2>
+<p class="reveal" style="color:var(--text-soft);max-width:64ch">Mentalno zdravlje pomagača, Gradska knjižnica Zabok. Fotografije preuzete s kzz.hr, s njihovog izvještaja.</p>
+<div class="gallery reveal">
+<figure><img src="https://kzz.hr/wp-content/uploads/2026/09/KZZ_6938-Copy-600x400.jpg" alt="Sudionici predavanja u Gradskoj knjižnici Zabok" loading="lazy" width="600" height="400"><figcaption>Sudionici predavanja — foto kzz.hr</figcaption></figure>
+<figure><img src="https://kzz.hr/wp-content/uploads/2026/09/KZZ_6877-Copy-600x400.jpg" alt="Predavanje Društva psihologa Krapinsko-zagorske županije" loading="lazy" width="600" height="400"><figcaption>Predavanje uživo — foto kzz.hr</figcaption></figure>
+<figure><img src="https://kzz.hr/wp-content/uploads/2026/09/KZZ_6972-Copy-600x400.jpg" alt="Publika na predavanju o mentalnom zdravlju pomagača" loading="lazy" width="600" height="400"><figcaption>Publika pomagača — foto kzz.hr</figcaption></figure>
+</div></div></section>
 <section><div class="container"><div class="contact-strip reveal">
 <div><h2 style="margin-bottom:.2rem">Stanujete u Zagorju? Razgovarajmo.</h2>
 <p style="color:var(--text-soft);margin:0">Sjedište: Prilaz Janka Tomića 2, 49210 Zabok</p></div>

@@ -31,6 +31,10 @@ section{padding:clamp(2.5rem,6vw,4rem) 0}
 .card p,.card li{color:var(--text-soft);font-size:.95rem}
 .card ul{padding-left:1.1rem;margin:.6rem 0}
 .card li{margin:.35rem 0}
+.photo{width:100%;height:220px;object-fit:cover;border-radius:14px;border:1px solid var(--line);display:block;margin:.8rem 0 .4rem}
+.photo-cap{font-size:.8rem;color:var(--text-soft);margin:0 0 .4rem}
+@media (max-width:900px){.grid2{grid-template-columns:1fr}.paybox dl{grid-template-columns:1fr}.photo{height:200px}}
+@media (max-width:600px){.nav-links{display:none}.hamburger{display:block}.menu-open .nav-links{display:flex;flex-direction:column;position:absolute;left:0;right:0;top:100%;background:var(--surface);border-bottom:1px solid var(--line);padding:.6rem 1rem 1rem;align-items:flex-start}.photo{height:auto}}
 .fee{display:flex;align-items:baseline;gap:.6rem;margin:.8rem 0}
 .fee .amount{font-family:'Fraunces',serif;font-size:2.2rem;font-weight:900;color:var(--primary)}
 .paybox{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:clamp(1.2rem,2.8vw,1.7rem);margin-top:1.4rem}
@@ -61,6 +65,8 @@ footer a{color:var(--text);text-decoration:none}
 <main>
 <section><div class="container">
 <h2 class="reveal">Što znamo provjereno</h2>
+<img class="photo reveal" src="https://kzz.hr/wp-content/uploads/2026/09/KZZ_6889-Copy-600x400.jpg" alt="Društvo psihologa Krapinsko-zagorske županije na predavanju u Zaboku" loading="lazy" width="600" height="400">
+<p class="photo-cap reveal">Foto: s predavanja Društva u Zaboku — izvor kzz.hr</p>
 <div class="grid2">
 <div class="card reveal"><h3>Osnovno</h3>
 <ul>
