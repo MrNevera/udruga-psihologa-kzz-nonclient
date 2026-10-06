@@ -1,0 +1,87 @@
+<!DOCTYPE html><html lang="hr"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Društvo psihologa KZŽ – Kontakt</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700;9..144,900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--primary:#2F5D50;--primary-d:#24473D;--accent:#B7791F;--accent-bg:#F2E3C2;--bg:#F7F5F0;--surface:#FFFFFF;--text:#22302B;--text-soft:#4A5E57;--line:rgba(34,48,43,0.12);--white:#FFFFFF}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;font-variant-numeric:tabular-nums;-webkit-font-smoothing:antialiased;caret-color:var(--primary)}
+::selection{background:var(--accent-bg);color:var(--text)}
+h1,h2,h3{font-family:'Fraunces',Georgia,serif;line-height:1.15;letter-spacing:-0.01em;text-wrap:balance}
+h1{font-size:clamp(2rem,5.5vw,3.2rem);font-weight:900}
+h2{font-size:clamp(1.3rem,3vw,1.7rem);font-weight:700;margin-bottom:.6rem}
+p{margin:.5rem 0}
+.container{max-width:1120px;margin:0 auto;padding:0 clamp(1rem,4vw,2.5rem)}
+section{padding:clamp(2.5rem,6vw,4rem) 0}
+.site-nav{position:sticky;top:0;z-index:100;background:var(--surface);border-bottom:1px solid var(--line)}
+.site-nav .container{display:flex;align-items:center;justify-content:space-between;min-height:68px;gap:1rem}
+.nav-logo{font-family:'Fraunces',serif;font-weight:900;font-size:1.15rem;color:var(--primary);text-decoration:none}
+.nav-links{display:flex;gap:1.6rem;align-items:center;list-style:none}
+.nav-links a{color:var(--text);font-size:.92rem;font-weight:500;text-decoration:none;padding:.4rem .1rem;border-bottom:2px solid transparent}
+.nav-links a:hover{color:var(--accent);border-bottom-color:var(--accent)}
+.nav-cta{background:var(--primary);color:#fff !important;padding:.55rem 1.15rem;border-radius:999px;font-weight:600;border-bottom:none !important}
+.hamburger{display:none;background:none;border:1px solid var(--line);border-radius:10px;padding:.45rem .6rem;cursor:pointer;font-size:1.1rem}
+.page-header{background:linear-gradient(180deg,var(--bg),#EDEFE7);border-bottom:1px solid var(--line);padding:clamp(2.2rem,5vw,3.5rem) 0}
+.page-header p{color:var(--text-soft);max-width:62ch}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(1.5rem,4vw,2.5rem);margin-top:1.6rem;align-items:start}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:clamp(1.2rem,3vw,1.8rem)}
+.card p{color:var(--text-soft);font-size:.95rem}
+.addr{margin-top:1rem;font-size:.95rem}
+.addr strong{color:var(--text)}
+.addr a{color:var(--text);text-decoration:none;font-weight:600}
+.addr a:hover{color:var(--accent)}
+form .field{display:flex;flex-direction:column;gap:.35rem;margin-bottom:1rem}
+form .row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+label{font-weight:600;font-size:.9rem}
+input,select,textarea{padding:.85rem 1rem;border-radius:14px;border:1px solid var(--line);background:var(--surface);color:var(--text);font:inherit;width:100%}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 4px rgba(183,121,31,.18)}
+textarea{min-height:130px;resize:vertical}
+button.submit{display:inline-flex;align-items:center;gap:.5rem;padding:.9rem 1.4rem;border-radius:14px;border:1px solid var(--primary);background:var(--primary);color:#fff;font-weight:600;cursor:pointer;font-size:1rem}
+button.submit:hover{background:var(--primary-d)}
+button.submit:disabled{opacity:.6;cursor:not-allowed}
+.note{font-size:.85rem;color:var(--text-soft);margin-top:.8rem}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+footer{border-top:1px solid var(--line);padding:1.6rem 0;color:var(--text-soft);font-size:.88rem}
+footer a{color:var(--text);text-decoration:none}
+.reveal{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s ease}
+.reveal.visible{opacity:1;transform:none}
+@media (max-width:900px){.contact-grid{grid-template-columns:1fr}form .row{grid-template-columns:1fr}}
+@media (max-width:600px){.nav-links{display:none}.hamburger{display:block}.menu-open .nav-links{display:flex;flex-direction:column;position:absolute;left:0;right:0;top:100%;background:var(--surface);border-bottom:1px solid var(--line);padding:.6rem 1rem 1rem;align-items:flex-start}}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+</style></head><body>
+<nav class="site-nav" aria-label="Glavna navigacija"><div class="container">
+<a class="nav-logo" href="index.html">DP KZŽ</a>
+<button class="hamburger" aria-label="Izbornik" onclick="document.body.classList.toggle('menu-open')">☰</button>
+<ul class="nav-links"><li><a href="index.html">Početna</a></li><li><a href="o-nama.html">O nama</a></li><li><a href="usluge.html">Aktivnosti</a></li><li><a href="kontakt.html">Kontakt</a></li><li><a class="nav-cta" href="o-nama.html#clanstvo">Učlani se</a></li></ul>
+</div></nav>
+<header class="page-header"><div class="container">
+<h1>Pišite Društvu izravno.</h1>
+<p>Obrazac šalje upit na adresu Društva. Za učlanjenje navedite ime, zvanje i mjesto rada ili boravka. Društvo odgovara nakon sjednice Skupštine.</p>
+</div></header>
+<main><section><div class="container"><div class="contact-grid">
+<div class="card reveal"><h2>Podaci</h2>
+<div class="addr">
+<p><strong>Sjedište:</strong> Prilaz Janka Tomića 2, 49210 Zabok</p>
+<p><strong>E-mail:</strong> ne znam, upisati nakon potvrde Udruge</p>
+<p><strong>Telefon:</strong> ne znam, upisati nakon potvrde Udruge</p>
+<p><strong>Članarina 2023.:</strong> 10,00 EUR na IBAN HR8023400091110224899</p>
+</div>
+<p style="margin-top:1rem">Pristupnicu možete poslati i poštom na adresu Društva. Odluku o prijemu donosi Skupština.</p></div>
+<div class="card reveal" style="transition-delay:.08s"><h2>Obrazac</h2>
+<form action="OVDJE_UNESI_FORMSPREE_LINK" method="POST">
+<div class="row">
+<div class="field"><label for="ime">Ime i prezime</label><input id="ime" type="text" name="ime" required autocomplete="name"></div>
+<div class="field"><label for="tel">Telefon</label><input id="tel" type="tel" name="telefon" autocomplete="tel"></div>
+</div>
+<div class="field"><label for="email">E-mail</label><input id="email" type="email" name="email" required autocomplete="email"></div>
+<div class="field"><label for="vrsta">Vrsta upita</label><select id="vrsta" name="vrsta_upita"><option>Učlanjenje</option><option>Članarina</option><option>Projekt / suradnja</option><option>Tjedan psihologije</option><option>Drugo</option></select></div>
+<div class="field"><label for="poruka">Poruka</label><textarea id="poruka" name="poruka" required placeholder="Napišite zvanje, mjesto rada ili boravka i razlog javljanja."></textarea></div>
+<button class="submit" type="submit">Pošalji upit →</button>
+<p class="note">Pravi Formspree link upisuje Eliot. Agent ne unosi stvarni link.</p>
+</form></div>
+</div></div></section></main>
+<footer><div class="container">© Društvo psihologa Krapinsko-zagorske županije • Prilaz Janka Tomića 2, 49210 Zabok • Kontakt mail i telefon: ne znam, upisati nakon potvrde Udruge</div></footer>
+<script>const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("visible");io.unobserve(e.target)}})},{threshold:.12});document.querySelectorAll(".reveal").forEach(el=>io.observe(el));</script>
+</body></html>

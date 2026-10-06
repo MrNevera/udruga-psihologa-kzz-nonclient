@@ -1,0 +1,21 @@
+:root {
+  --primary: #2F5D50;
+  --primary-d: #24473D;
+  --accent: #D9A441;
+  --accent-l: #F2E3C2;
+  --bg: #F7F5F0;
+  --surface: #FFFFFF;
+  --text: #22302B;
+  --text-soft: #5C6F68;
+  --line: rgba(34,48,43,0.12);
+  --white: #FFFFFF;
+}
+
+/* Referenca za boje i konvencije
+   Primarna: duboka zelena #2F5D50 — smirenost, povjerenje
+   Accent: topli amber #D9A441 — poziv na akciju, toplina
+   Pozadina: topla papirnata #F7F5F0
+   Fontovi: Fraunces (naslovi) + Inter (tekst)
+   Breakpoint: 900px tablet, 600px mobitel
+   Kontakt linkovi: bez podcrtavanja, boja teksta, hover accent
+*/
